@@ -1,4 +1,4 @@
-name: HACS Validation
+name: HACS Action
 
 permissions:
   contents: read
@@ -11,10 +11,10 @@ on:
 
 jobs:
   hacs:
-    name: HACS Validation
-    runs-on: ubuntu-latest
+    name: HACS Action
+    runs-on: "ubuntu-latest"
     steps:
       - name: HACS Action
-        uses: hacs/action@main
+        uses: "hacs/action@main"
         with:
-          category: integration
+          category: "integration"
