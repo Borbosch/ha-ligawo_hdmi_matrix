@@ -1,0 +1,14 @@
+switch_input:
+  name: HDMI Eingang umschalten
+  description: Schaltet einen Ausgang der Matrix auf einen neuen Eingang.
+  fields:
+    output:
+      name: Ausgang
+      description: Nummer des Ausgangs (z.B. 1, 2, 3…)
+      required: true
+      example: 1
+    input:
+      name: Eingang
+      description: Nummer des Eingangs (z.B. 1, 2, 3…)
+      required: true
+      example: 2
