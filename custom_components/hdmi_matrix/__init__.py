@@ -24,9 +24,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
         handle_switch_input
     )
 
-    hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(entry, "select")
-    )
+    # WICHTIG: Korrekt awaiten und mehrere Plattformen unterstützen
+    await hass.config_entries.async_forward_entry_setups(entry, ["select"])
 
     return True
 
